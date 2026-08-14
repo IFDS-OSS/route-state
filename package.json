@@ -3,8 +3,15 @@
   "version": "0.1.0",
   "description": "Type-safe URL query state management for Nuxt 3 & 4 — useState for the URL.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IFDS-OSS/route-state.git"
+  },
   "type": "module",
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "types": "./dist/module.d.ts",
@@ -26,6 +33,7 @@
   ],
   "scripts": {
     "build": "unbuild",
+    "prepublishOnly": "npm run build",
     "dev": "nuxt dev playground",
     "prepare": "nuxt prepare playground",
     "prepare:nuxt4": "node scripts/prepare-nuxt4.mjs",
