@@ -1,0 +1,10 @@
+{
+  "name": "playground-nuxt4",
+  "private": true,
+  "description": "Nuxt 4 parity playground for @ifds/route-state",
+  "type": "module",
+  "dependencies": {
+    "nuxt": "^4.0.0",
+    "zod": "^3.23.0"
+  }
+}

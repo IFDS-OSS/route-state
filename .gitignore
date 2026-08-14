@@ -1,0 +1,12 @@
+node_modules
+dist
+.nuxt
+.nitro
+.cache
+.output
+coverage
+*.log
+.DS_Store
+.env
+# project is bun-managed; package-lock.json is a stale npm artifact
+package-lock.json

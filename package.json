@@ -1,0 +1,60 @@
+{
+  "name": "@ifds/route-state",
+  "version": "0.1.0",
+  "description": "Type-safe URL query state management for Nuxt 3 & 4 — useState for the URL.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/module.d.ts",
+      "import": "./dist/module.mjs"
+    },
+    "./parsers": {
+      "types": "./dist/runtime/parsers/index.d.ts",
+      "import": "./dist/runtime/parsers/index.mjs"
+    },
+    "./runtime/*": {
+      "types": "./dist/runtime/*.d.ts",
+      "import": "./dist/runtime/*.mjs"
+    }
+  },
+  "main": "./dist/module.mjs",
+  "types": "./dist/module.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "nuxt dev playground",
+    "prepare": "nuxt prepare playground",
+    "prepare:nuxt4": "node scripts/prepare-nuxt4.mjs",
+    "dev:nuxt4": "nuxt dev playground-nuxt4",
+    "build:nuxt4": "nuxt build playground-nuxt4",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.13.0"
+  },
+  "peerDependencies": {
+    "nuxt": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "zod": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "nuxt": "^3.16.0",
+    "typescript": "^5.6.0",
+    "unbuild": "^3.0.0",
+    "vitest": "^3.0.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.4.0",
+    "vue-tsc": "^2.1.0",
+    "zod": "^3.23.0"
+  }
+}
