@@ -175,3 +175,15 @@ npm run dev:nuxt4                    # dev server (Nuxt 4)
 ```
 
 The vendored copy resolves `nuxt/app`, `vue`, and `vue-router` from the app's **own** Nuxt 4 install, and the module has no Nuxt-4-only internals (`compatibility: { nuxt: '>=3.0.0' }`) — so a passing `build:nuxt4` plus the SSR smoke test is parity evidence for both majors.
+
+## Structure and Architecture
+
+For this matter, you may read [this file](STRUCTURE-AND-ARCHITECTURE.md).
+
+## Publishing
+
+See [PUBLISHING.md](PUBLISHING.md) for the npm release process.
+
+## License
+
+MIT.
